@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sfuapp</string>
+    <string name="add_textbox_hint">Add a ToDo item</string>
+    <string name="add_button_text">Add</string>
+    <string name="mobile_services">Mobile Services </string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="checkbox_text">Item Text</string>
+    <string name="title_activity_user_details">User Details</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="majors_array">
+        <item>Science</item>
+        <item>Arts</item>
+        <item>Fine Arts</item>
+        <item>General</item>
+        <item>Undecided</item>
+    </string-array>
+
+    <string-array name="planets_array">
+    <item>Mercury</item>
+    <item>Venus</item>
+    <item>Earth</item>
+    <item>Mars</item>
+    <item>Jupiter</item>
+    <item>Saturn</item>
+    <item>Uranus</item>
+    <item>Neptune</item>
+    </string-array>
+
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+</resources>

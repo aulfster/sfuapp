@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.example.sfuapp"
+        minSdkVersion 14
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/mobileservices-1.1.5.jar')
+    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.google.code.gson:gson:2.2.2'
+    compile 'com.android.support:appcompat-v7:20.0.0'
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\pre-dexed\debug\classes-19e3d09ba1dc144c9b642a43127030fe43d11dba.jar"
+        jar="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
+        dex="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\pre-dexed\debug\mobileservices-1.1.5-9aebd519de16ad341c7d6fb90960bc0ad75bef69.jar"
+        jar="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\libs\mobileservices-1.1.5.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="12188408c45b88124cb38dd2bedc9b314b5f554b"/>
+    <item
+        dex="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\pre-dexed\debug\classes-4801f4444274001e6e0efbfc2763ba47d9668b2f.jar"
+        jar="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-bcf0a823fa24f6d53f48a53cc62c98415c6e9292.jar"
+        jar="C:\Android Studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\pre-dexed\debug\gson-2.2.2-539ff7d06cfe71776755a50d8b1bc3dfdf489446.jar"
+        jar="C:\Users\Chander\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1f96456ca233dec780aa224bff076d8e8bca3908"/>
+    <item
+        dex="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-a4b480720d19c7cf868430385e6e78d173968aa9.jar"
+        jar="C:\Users\Chander\AndroidstudioProjects\sfuapp\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+
+</pre-dex-items>

@@ -36,6 +36,11 @@
             android:name=".MainScreen"
             android:label="@string/title_activity_main_screen" >
         </activity>
+        <activity
+            android:name=".testActivity"
+            android:label="@string/title_activity_test"
+            android:parentActivityName=".MainScreen" >>
+        </activity>
     </application>
 
 </manifest>

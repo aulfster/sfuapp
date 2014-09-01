@@ -1,19 +1,11 @@
 package com.example.sfuapp;
 
 import android.app.Activity;
-import android.app.SearchManager;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,12 +15,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.Locale;
 
 
 public class MainScreen extends Activity{
@@ -49,7 +36,7 @@ public class MainScreen extends Activity{
         Intent oldIntent = getIntent();
 
         mTitle = mDrawerTitle = getTitle();
-        mPlanetTitles = getResources().getStringArray(R.array.planets_array);
+        mPlanetTitles = getResources().getStringArray(R.array.menu_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
@@ -142,14 +129,27 @@ public class MainScreen extends Activity{
     }
 
     private void selectItem(int position) {
-        // update the main content by replacing fragments
-        android.app.Fragment fragment = new PlanetFragment();
-        Bundle args = new Bundle();
-        args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-        fragment.setArguments(args);
 
-        android.app.FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+            // update the main content by replacing fragments
+            android.app.Fragment fragment = new Friends();
+            Bundle args = new Bundle();
+            args.putInt(Friends.ARG_PLANET_NUMBER, position);
+            fragment.setArguments(args);
+
+            android.app.FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+
+//        else {
+//            // update the main content by replacing fragments
+//            android.app.Fragment fragment = new PlanetFragment();
+//            Bundle args = new Bundle();
+//            args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
+//            fragment.setArguments(args);
+//
+//            android.app.FragmentManager fragmentManager = getFragmentManager();
+//            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+//        }
+
 
         // update selected item and title, then close the drawer
         mDrawerList.setItemChecked(position, true);
@@ -196,13 +196,50 @@ public class MainScreen extends Activity{
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_planet, container, false);
+
             int i = getArguments().getInt(ARG_PLANET_NUMBER);
+
             String planet = getResources().getStringArray(R.array.planets_array)[i];
 
-            int imageId = getResources().getIdentifier(planet.toLowerCase(Locale.getDefault()),
-                    "drawable", getActivity().getPackageName());
-            ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
+//            int imageId = getResources().getIdentifier(planet.toLowerCase(Locale.getDefault()),
+//                    "drawable", getActivity().getPackageName());
+//
+//
+//            ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
+
+            getActivity().setTitle(planet + "This is me");
+
+            return rootView;
+        }
+    }
+
+    /**
+     * Fragment that appears in the "content_frame", shows a planet
+     */
+    public static class Friends extends android.app.Fragment {
+        public static final String ARG_PLANET_NUMBER = "planet_number";
+
+        public Friends() {
+            // Empty constructor required for fragment subclasses
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_test, container, false);
+
+            int i = getArguments().getInt(ARG_PLANET_NUMBER);
+//
+            String planet = getResources().getStringArray(R.array.menu_array)[i];
+
+//            int imageId = getResources().getIdentifier(planet.toLowerCase(Locale.getDefault()),
+//                    "drawable", getActivity().getPackageName());
+//
+//
+//            ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
+
             getActivity().setTitle(planet);
+
             return rootView;
         }
     }
